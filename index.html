@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neomorphic UI Components</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Neomorphic UI Components</h1>
+        
+        <div class="grid">
+            <!-- Card 1: Botões Primários -->
+            <div class="card">
+                <h3 class="card-title">Primary Buttons</h3>
+                <div class="button-group">
+                    <button class="btn btn-primary" onclick="showAlert('Primary Button!')">Lorem</button>
+                    <button class="btn btn-primary" onclick="showAlert('Clicked!')">Ipsum</button>
+                    <button class="btn btn-primary" onclick="showAlert('Action!')">Dolor</button>
+                </div>
+            </div>
+
+            <!-- Card 2: Botões Secundários -->
+            <div class="card">
+                <h3 class="card-title">Secondary Buttons</h3>
+                <div class="button-group">
+                    <button class="btn btn-secondary">Amet</button>
+                    <button class="btn btn-secondary">Consectetur</button>
+                    <button class="btn btn-secondary">Adipiscing</button>
+                </div>
+            </div>
+
+            <!-- Card 3: Botões com Ícones -->
+            <div class="card">
+                <h3 class="card-title">Icon Buttons</h3>
+                <div class="icon-group">
+                    <button class="icon-btn" onclick="this.classList.toggle('pulse')">🏠</button>
+                    <button class="icon-btn">❤️</button>
+                    <button class="icon-btn">⭐</button>
+                    <button class="icon-btn">🔔</button>
+                    <button class="icon-btn">📷</button>
+                </div>
+            </div>
+
+            <!-- Card 4: Toggle Switches -->
+            <div class="card">
+                <h3 class="card-title">Toggle Switches</h3>
+                <div style="display: flex; gap: 20px; flex-direction: column;">
+                    <div class="toggle-switch" onclick="this.classList.toggle('active')"></div>
+                    <div class="toggle-switch active" onclick="this.classList.toggle('active')"></div>
+                    <div class="toggle-switch" onclick="this.classList.toggle('active')"></div>
+                </div>
+            </div>
+
+            <!-- Card 5: Estatísticas -->
+            <div class="card stat-card">
+                <div class="stat-number" id="counter">0</div>
+                <div class="stat-label">Total Clicks</div>
+                <button class="btn btn-primary" style="margin-top: 15px;" onclick="incrementCounter()">Incrementar</button>
+            </div>
+
+            <!-- Card 6: Progress Bar -->
+            <div class="card">
+                <h3 class="card-title">Progress Bar</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress"></div>
+                </div>
+                <button class="btn btn-primary" style="margin-top: 20px; width: 100%;" onclick="animateProgress()">Start Progress</button>
+            </div>
+
+            <!-- Card 7: Input Field -->
+            <div class="card">
+                <h3 class="card-title">Input Field</h3>
+                <input type="text" class="input-neo" placeholder="Digite algo aqui..." onkeyup="handleInput(event)">
+                <p id="inputFeedback" style="margin-top: 15px; color: #6c5ce7; font-size: 14px;"></p>
+            </div>
+
+            <!-- Card 8: Mixed Controls -->
+            <div class="card">
+                <h3 class="card-title">Mixed Controls</h3>
+                <div style="display: flex; flex-direction: column; gap: 15px;">
+                    <button class="btn btn-primary" style="width: 100%;">Full Width Button</button>
+                    <div style="display: flex; gap: 10px;">
+                        <button class="btn btn-secondary" style="flex: 1;">Cancel</button>
+                        <button class="btn btn-primary" style="flex: 1;">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
